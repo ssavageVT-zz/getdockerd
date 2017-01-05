@@ -1,0 +1,12 @@
+version: '2'
+services:
+    getdockerd-postgresql:
+        container_name: getdockerd-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/getdockerd/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=getdockerd
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
